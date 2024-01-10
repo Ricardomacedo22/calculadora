@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mini-caluladora</title>
+        <meta charset="UTF-8">
+    </head>
+       <body>
+        
+
+        <h1 style="text-align: center;">Mini-calculadora</h1> 
+        <br>
+        <br>
+        <br>
+
+        <form name="calculator">
+        <fieldset id="fieldset" style="margin-right: 700px; margin-left: 700px; padding-top: 25px; border: #000 ; border-radius: 25px; border-style: solid;">
+
+        <input type="text" class="text" name="text1" disabled>
+        <input type="button" class="text2" name="text2" value="C" onclick="location.reload()"><br>
+
+        <input type="button" class="botao" name="btn9" value="9" onclick="displaynum(btn9.value)">
+        <input type="button" class="botao" name="btn8" value="8" onclick="displaynum(btn8.value)">
+        <input type="button" class="botao" name="btn7" value="7" onclick="displaynum(btn7.value)">
+        <input type="button" class="botao" name="btnmais" id="mais" value="+" onclick="displaynum(btnmais.value)"> <br>
+
+        <input type="button" class="botao" name="btn6" value="6" onclick="displaynum(btn6.value)">
+        <input type="button" class="botao" name="btn5" value="5" onclick="displaynum(btn5.value)">
+        <input type="button" class="botao" name="btn4" value="4" onclick="displaynum(btn4.value)">
+        <input type="button" class="botao" name="btnmenos" id="menos" value="-" onclick="displaynum(btnmenos.value)"><br>
+
+
+        <input type="button" class="botao" name="btn3" value="3" onclick="displaynum(btn3.value)">
+        <input type="button" class="botao" name="btn2" value="2" onclick="displaynum(btn2.value)">
+        <input type="button" class="botao" name="btn1" value="1" onclick="displaynum(btn1.value)">
+        <input type="button" class="botao" name="btndiv" id="div" value="/" onclick="displaynum(btndiv.value)"> <br>
+
+        <input type="button" class="botao" name="btndot" value="." onclick="displaynum(btndot.value)">
+        <input type="button" class="botao" name="btn0" value="0" onclick="displaynum(btn0.value)">
+        <input type="button" class="botao" name="btnequal" id="igual" value="=" onclick="text1.value = eval(text1.value)">
+        <input type="button" class="botao" name="btnmultip" id="multip" value="*" onclick="displaynum(btnmultip.value)"> <br>
+
+        </form>
+
+        </fieldset>
+
+        <style>
+
+            .botao{
+                width: 100px;
+                height: 100px;
+                background: color #000; 
+                
+            }
+
+            .text{
+                width:270px;
+                letter-spacing: 5px;
+                border-radius: 20%;
+                border-color: #000;
+                margin-bottom: 10px;
+
+            }
+
+
+            .text2{
+                width: 100px;
+                border-radius: 50%;
+                background-color: rgb(255, 0, 0);
+
+            }
+
+            input{
+                font-size: 50px;
+                padding: 17px;
+                color: #000;
+                border-radius: 25%;
+            }
+
+            body{
+                height: 100vh;
+                text-align: center;
+                background-color: #fff;
+                justify-content: center;
+            }
+            
+            #mais{
+                background-color: aqua;
+                margin-bottom: 5px;
+            }
+
+            #menos{
+                background-color: orange;
+                margin-bottom: 5px;
+
+            }
+
+            #div{
+
+                background-color:deeppink;
+                margin-bottom: 5px;
+
+            }
+
+            #multip{
+                background-color:yellow;
+                margin-bottom: 5px;
+
+
+            }
+
+            #igual{
+                background-color: mediumslateblue;
+            }
+
+        </style>
+
+        <script>
+            function displaynum (n1){
+            calculator.text1.value = calculator.text1.value + n1;
+            }
+
+        </script>
+
+       </body>
+</html>Ì
